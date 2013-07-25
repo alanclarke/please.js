@@ -28,12 +28,12 @@
     }
     function teardownAllowedTest () {
       please.defaults({
-        allowed: false
+        sourceOrigin: false
       });
     }
     function setupAllowedTest () {
       please.defaults({
-        allowed: function (messageEvent) {
+        sourceOrigin: function (messageEvent) {
           if (JSON.parse(messageEvent.data).data[0] === "teardownAllowedTest") {
             teardownAllowedTest();
             return true;

@@ -39,7 +39,7 @@ asyncTest('Overring defaults', function () {
 	});
 });
 
-module('please.defaults.allowed');
+module('please.defaults.sourceOrigin');
 asyncTest('Does not respond to invalid origin', function () {
 	var childFrame = $('#child-frame').get(0);
 
